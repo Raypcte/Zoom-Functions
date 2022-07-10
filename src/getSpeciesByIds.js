@@ -1,4 +1,4 @@
-const data = require("../data/zoo_data");
+const data = require('../data/zoo_data');
 
 function getSpeciesByIds(...ids) {
   console.log(ids);
@@ -6,10 +6,7 @@ function getSpeciesByIds(...ids) {
     return [];
   }
   if (ids.length === 1) {
-    const bicho = data.species.find((specie) => {
-      // find = encontrar um itém do Array
-      return ids[0] === specie.id;
-    });
+    const bicho = data.species.find((specie) => ids[0] === specie.id);
     return [bicho];
   }
 
